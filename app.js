@@ -8,6 +8,10 @@ const allPhones = () => {
 
 const showPhone = (phones) => {
     // console.log(phones);
+    if(phones==false){
+        alert('There is no phone');
+    }
+    
     for (const phone of phones) {
         // console.log(phone);
         const parent = document.getElementById('phone-container');
