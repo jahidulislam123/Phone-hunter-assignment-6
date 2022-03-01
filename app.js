@@ -23,9 +23,9 @@ const showPhone = (phones) => {
     <h2>Name: ${phone.phone_name}</h2>
     <h5 class="mb-4">Brand : ${phone.brand}</h5>
     
-    <div class="allButtion">
-        <button " class="btn btn-danger ms-4">Delete</button>
-         <button onclick="details('${phone.slug}')" class="btn btn-success ms-4">details</button>
+    <div class="allButtion ">
+        
+         <button onclick="details('${phone.slug}')" class="btn btn-success">details</button>
     </div>
     
 </div>
@@ -58,12 +58,20 @@ const setDetails = (info) => {
     div1.innerHTML = `
    <div class="container  px-lg-6">
    <div class="row  mx-lg-n5">
+
      <div class="col m-3 d-flex  py-3 px-lg-5 shadow">
      <img class="ms-4" src="${info.image}" alt=""> 
-    <h1 class="mt-4 ms-2"> Brand:${info.brand}</h1>
-     </div> <br>
-     <div class="col m-3 py-3 px-lg-5 shadow "> <h1>${info.releaseDate} </h1>
-     <h2>display: ${info.mainFeatures.storage}</h2></div>
+     <div><h1 class="mt-4 ms-2"> Brand:${info.brand}</h1> 
+     <h2 class="mt-4 ms-2">Name: ${info.name}</h2></div>
+     </div> 
+     
+
+     <div class="col m-3 py-3 px-lg-5 shadow ">
+      <h1>${info.releaseDate} </h1>
+     <h2>Storage: ${info.mainFeatures.storage}</h2>
+     <h3>Display:${info.mainFeatures.displaySize} </h3>
+     </div>
+
    </div>
  </div>
 
