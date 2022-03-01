@@ -12,7 +12,8 @@ const showPhone = (phones) => {
         // console.log(phone);
         const parent = document.getElementById('phone-container');
         const div = document.createElement('div');
-        div.innerHTML = ` <div class="card border p-5">
+        
+        div.innerHTML = ` <div class="card shadow p-5">
 <div class="pro-pic">
     <img class="w-50 ms-5" src="${phone.image}" alt="">
     <h2>Name: ${phone.phone_name}</h2>
@@ -48,15 +49,16 @@ const setDetails = (info) => {
     // console.log(info.strGender);
     const parent1 = document.getElementById('details-container');
     const div1 = document.createElement('div');
+    div1.classList.add('post');
 
     div1.innerHTML = `
-   <div class="container px-lg-6">
-   <div class="row mx-lg-n5">
-     <div class="col d-flex py-3 px-lg-5 border ">
+   <div class="container  px-lg-6">
+   <div class="row  mx-lg-n5">
+     <div class="col m-3 d-flex  py-3 px-lg-5 shadow">
      <img class="ms-4" src="${info.image}" alt=""> 
     <h1 class="mt-4 ms-2"> Brand:${info.brand}</h1>
      </div> <br>
-     <div class="col py-3 px-lg-5 border "> <h1>${info.releaseDate} </h1>
+     <div class="col m-3 py-3 px-lg-5 shadow "> <h1>${info.releaseDate} </h1>
      <h2>display: ${info.mainFeatures.storage}</h2></div>
    </div>
  </div>
