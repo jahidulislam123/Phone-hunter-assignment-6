@@ -73,13 +73,24 @@ const setDetails = (info) => {
      </div>
 
    </div>
- </div>
 
    
-    </div>
+ 
+  <div class="card shadow">
+  <div class="card-body shadow">
+  <h1>Sensors:${info.mainFeatures.sensors}</h1>
+  </div>
+  </div>
+
+
+  </div>
+  </div> 
+    
     `;
 
 
     parent1.appendChild(div1);
 
+
+    
 }
