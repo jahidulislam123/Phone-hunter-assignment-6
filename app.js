@@ -11,8 +11,8 @@ const showPhone = (phones) => {
     if(phones==false){
         alert('There is no phone');
     }
-    
-    for (const phone of phones) {
+    let sliceArray=phones.slice(0,20);
+    for (const phone of sliceArray) {
         // console.log(phone);
         const parent = document.getElementById('phone-container');
         const div = document.createElement('div');
