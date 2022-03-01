@@ -1,9 +1,8 @@
 #phone-header {
-    color: crimson;
-
-    font-weight: 800;
-    background-color: aquamarine;
-    border: 3px solid forestgreen;
+    color: white;
+    background-image: linear-gradient(crimson, red, orange);
+    font-weight: bold;
+    padding-bottom: 5px;
     border-radius: 8px;
 
 }
